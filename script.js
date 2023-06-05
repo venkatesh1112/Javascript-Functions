@@ -21,4 +21,7 @@ Teacher();
 
 //////////////////////////////////////////
 //Arrow Function
-console.log(typeof []);
+var College = (code, course) => {
+  console.log("Course code is " + code + " and Course name is " + course);
+};
+College(223, "Computer Science and Engineering");
