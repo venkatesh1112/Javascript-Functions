@@ -25,3 +25,13 @@ var College = (code, course) => {
   console.log("Course code is " + code + " and Course name is " + course);
 };
 College(223, "Computer Science and Engineering");
+
+/////////////////////////////////////////////
+// XMLHttpRequest()
+const request = new XMLHttpRequest();
+request.open("GET", `https://restcountries.com/v3.1/name/portugal`);
+request.send();
+request.addEventListener("load", function () {
+  const [data] = JSON.parse(this.responseText);
+  console.log(data);
+});
